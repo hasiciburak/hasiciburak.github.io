@@ -1,0 +1,147 @@
+/*IMPORTING FONTS*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+/*CSS RESET START*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #fbf8f1;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+/*CSS RESET END*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+.page {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas:
+    "navbar navbar"
+    "left-area right-area";
+  align-items: center;
+}
+.navbar {
+  grid-area: navbar;
+  padding-top: 10px;
+  display: block;
+}
+
+.hsc-logo {
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  position: absolute;
+  z-index: 0;
+}
+.hsc-logo::before {
+  content: "HSC";
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  color: #b6b6b6;
+  position: absolute;
+  right: 3px;
+  z-index: -1;
+}
+.im-burak {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+}
+.left-area {
+  grid-area: left-area;
+  padding-left: 10%;
+  line-height: 1.7;
+}
+.right-area {
+  grid-area: right-area;
+}
+
+.landing-image {
+  height: 80vh;
+  float: right;
+  border-radius: 5px;
+  margin-right: 10%;
+}
+
+.icon-sets {
+  font-size: 20px;
+}
+.icon-sets > a:first-child {
+  margin-left: 0px;
+}
+
+.icon-sets > a {
+  text-decoration: none;
+  color: black;
+  margin-left: 10px;
+}
+.hola,
+.hello {
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 600;
+}
+
+.hello-in-languages {
+  font-size: 16px;
+}
+
+.social-media-header {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.div-button-container {
+  margin-top: 10px;
+}
+.cv-button {
+  padding-top: 20px;
+  text-align: left;
+  margin-top: 20px !important;
+  text-decoration: none;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.cv-button:hover {
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
+  text-decoration: underline;
+}
