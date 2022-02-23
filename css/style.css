@@ -214,6 +214,21 @@ img {
     right: 3px;
     z-index: -1;
   }
+  .hello-in-languages {
+    font-size: 14px;
+  }
+  .im-burak {
+    font-size: 24px;
+  }
+  .im-burak-description {
+    font-size: 14px;
+  }
+  .social-media-header {
+    font-size: 16px;
+  }
+  .cv-button {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
