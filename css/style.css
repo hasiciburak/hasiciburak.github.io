@@ -3,6 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
+/*CSS VARIABLES*/
+:root {
+  --duration: 1;
+  --duration-s: calc(var(--duration) * 1s);
+}
+
 /*CSS RESET START*/
 html {
   box-sizing: border-box;
@@ -10,6 +16,7 @@ html {
   background-color: #fbf8f1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  animation: site-opening var(--duration-s) ease-in-out;
 }
 
 *,
@@ -195,6 +202,10 @@ img {
   }
   .im-burak {
     font-size: 32px;
+    animation-name: fade-up-effect;
+    animation-duration: calc(var(--duration-s) * 2);
+    animation-timing-function: ease-in-out;
+    animation-delay: var(--duration);
   }
   .hsc-logo {
     text-decoration: none;
@@ -250,4 +261,26 @@ img {
 }
 
 @media (min-width: 1200px) {
+}
+
+/*ANIMATIONS*/
+
+@keyframes site-opening {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-up-effect {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
