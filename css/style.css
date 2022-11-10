@@ -202,10 +202,6 @@ img {
   }
   .im-burak {
     font-size: 32px;
-    animation-name: fade-up-effect;
-    animation-duration: calc(var(--duration-s) * 2);
-    animation-timing-function: ease-in-out;
-    animation-delay: var(--duration);
   }
   .hsc-logo {
     text-decoration: none;
